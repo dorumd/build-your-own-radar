@@ -5,4 +5,4 @@ require('./gtm.js')
 
 const GoogleSheetInput = require('./util/factory')
 
-GoogleSheetInput().build()
+GoogleSheetInput().build_from_sheet('http://localhost:8090/artifacts/radar.csv')

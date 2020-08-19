@@ -201,7 +201,12 @@ const GoogleSheetInput = function () {
   var self = {}
   var sheet
 
-  self.build = function () {
+  self.build_from_sheet = function (sheetId) {
+    sheet = CSVDocument(sheetId)
+    sheet.init().build()
+  }
+
+  self.build = function (sheetId) {
     var domainName = DomainName(window.location.search.substring(1))
     var queryString = window.location.href.match(/sheetId(.*)/)
     var queryParams = queryString ? QueryParams(queryString[0]) : {}
