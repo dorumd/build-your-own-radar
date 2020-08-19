@@ -44,7 +44,8 @@ const plugins = [
     'process.env.CLIENT_ID': JSON.stringify(process.env.CLIENT_ID),
     'process.env.API_KEY': JSON.stringify(process.env.API_KEY),
     'process.env.ENABLE_GOOGLE_AUTH': JSON.stringify(process.env.ENABLE_GOOGLE_AUTH),
-    'process.env.GTM_ID': JSON.stringify(process.env.GTM_ID)
+    'process.env.GTM_ID': JSON.stringify(process.env.GTM_ID),
+    'process.env.SHEET_ID': JSON.stringify(process.env.SHEET_ID),
   })
 ]
 
