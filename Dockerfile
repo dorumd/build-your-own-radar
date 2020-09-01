@@ -1,4 +1,6 @@
 FROM node:10.15.3 as source
+ARG SHEET_ID
+ENV SHEET_ID=$SHEET_ID
 WORKDIR /src/build-your-own-radar
 COPY package.json ./
 RUN npm install
