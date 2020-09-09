@@ -1,55 +1,51 @@
-name,ring,quadrant,isNew,description
-Perl,hold,languages-and-frameworks,False,"<h2>Description</h2>
+name;ring;quadrant;isNew;description
+Perl;hold;languages-and-frameworks;FALSE;"<h2>Description</h2>
 
-<p>[Describe the context and problem statement, e.g., in free form using a few sentences. You may want to articulate the problem in form of a question.]</p>
-"
-PHP,adopt,languages-and-frameworks,False,"<h2>Description</h2>
+<p>[Describe the context and problem statement, e.g., in free form using a few sentences. You may want to articulate the problem in form of a question.]</p>"
+PHP;adopt;languages-and-frameworks;FALSE;"<h2>Description</h2>
 
-<p>[Describe the context and problem statement, e.g., in free form using a few sentences. You may want to articulate the problem in form of a question.]</p>
-"
-Python,adopt,languages-and-frameworks,False,"<p>Python, is an easy to learn and use open-source programming language. 
-It comes with a mature ecosystem which offers the needed tooling to speed up the development process.</p>
+<p>[Describe the context and problem statement, e.g., in free form using a few sentences. You may want to articulate the problem in form of a question.]</p>"
+Python;adopt;languages-and-frameworks;FALSE;"<p>We believe software engineers should bring features to customers frequently and in a fast manner. That&#39;s why we have adopted CD practices in our SDLC.</p>
+<p>In case of software defects, the code changes can be easily rolled back without extra complexity(using revert PRs). When it comes to database, it&#39;s more complex. Ex:
+The table <code>order_cancellations</code> is created as part of introduction of new feature on the website that allows customers to cancel the order on their own.
+After the feature was shipped live, we realized that 100 customers have already cancelled their orders, and about half of them suffered from a bug that limits them from using our platform.
+The decision was made to revert the change from production, but we forgot that this will lead to &#39;DROP TABLE&#39; of cancellations, and we lost the data as a result of that.</p>
+<p>Of course, we believe that there are usecases where software engineers should define database migrations with rollbacks.
+Such an example could be software shipped to customers using on-premise deployment model. Those customers should be able to deploy a new release, and revert it in case of a problem.
+However, those usecases are not relevant for our business, where we ship software live continuously via microiterations.</p>
+<p>Instead of relying on rollbacks for database migrations, we prefer to migrate forward to a good working state of database.
+This enables us to:</p>
+<ul>
+<li>minimise the risk of accidental data loss</li>
+<li>save the time spent on writing down migrations</li>
+<li>use blue-green deployments</li>
+</ul>
+<p><a href=""https://www.martinfowler.com/articles/evodb.html"">Evolutionary Database Design by Martin Fowler</a></p>"
+Django;trial;languages-and-frameworks;FALSE;"<h2>Description</h2>
 
-<p>We encourage to use Python as a default language in data-intensive domains (data warehouse operations, data analysis), and recommend to use it for developing web applications. See also 'Django' as an MVC framework for Python.</p>
+<p>[Describe the context and problem statement, e.g., in free form using a few sentences. You may want to articulate the problem in form of a question.]</p>"
+NodeJS;assess;languages-and-frameworks;FALSE;"<h2>Description</h2>
 
-<p>We favor it due to the following reasons:
-* Wide coverage of different domains(making it one of the most popular programming languages in the world <a href=""https://insights.stackoverflow.com/survey/2020#most-popular-technologies"">StackOverflow Insights 2020</a>)
-* Improved productivity
-* Simple and easy</p>
-"
-Django,trial,languages-and-frameworks,False,"<h2>Description</h2>
+<p>[Describe the context and problem statement, e.g., in free form using a few sentences. You may want to articulate the problem in form of a question.]</p>"
+Snowflake;trial;platforms;FALSE;"<h2>Description</h2>
 
-<p>[Describe the context and problem statement, e.g., in free form using a few sentences. You may want to articulate the problem in form of a question.]</p>
-"
-NodeJS,assess,languages-and-frameworks,False,"<h2>Description</h2>
+<p>[Describe the context and problem statement, e.g., in free form using a few sentences. You may want to articulate the problem in form of a question.]</p>"
+GitlabCI;assess;platforms;FALSE;"<h2>Description</h2>
 
-<p>[Describe the context and problem statement, e.g., in free form using a few sentences. You may want to articulate the problem in form of a question.]</p>
-"
-Snowflake,trial,platforms,False,"<h2>Description</h2>
+<p>[Describe the context and problem statement, e.g., in free form using a few sentences. You may want to articulate the problem in form of a question.]</p>"
+Contentful;adopt;platforms;FALSE;"<h2>Description</h2>
 
-<p>[Describe the context and problem statement, e.g., in free form using a few sentences. You may want to articulate the problem in form of a question.]</p>
-"
-GitlabCI,assess,platforms,False,"<h2>Description</h2>
+<p>[Describe the context and problem statement, e.g., in free form using a few sentences. You may want to articulate the problem in form of a question.]</p>"
+TRUE;hold;platforms;FALSE;"<h2>Description</h2>
 
-<p>[Describe the context and problem statement, e.g., in free form using a few sentences. You may want to articulate the problem in form of a question.]</p>
-"
-Contentful,adopt,platforms,False,"<h2>Description</h2>
+<p>[Describe the context and problem statement, e.g., in free form using a few sentences. You may want to articulate the problem in form of a question.]</p>"
+Trunk-based development;adopt;techniques;FALSE;"<h2>Description</h2>
 
-<p>[Describe the context and problem statement, e.g., in free form using a few sentences. You may want to articulate the problem in form of a question.]</p>
-"
-True,hold,platforms,False,"<h2>Description</h2>
+<p>[Describe the context and problem statement, e.g., in free form using a few sentences. You may want to articulate the problem in form of a question.]</p>"
+Declarative data pipeline definition;assess;techniques;FALSE;"<h2>Description</h2>
 
-<p>[Describe the context and problem statement, e.g., in free form using a few sentences. You may want to articulate the problem in form of a question.]</p>
-"
-Trunk-based development,adopt,techniques,False,"<h2>Description</h2>
-
-<p>[Describe the context and problem statement, e.g., in free form using a few sentences. You may want to articulate the problem in form of a question.]</p>
-"
-Declarative data pipeline definition,assess,techniques,False,"<h2>Description</h2>
-
-<p>[Describe the context and problem statement, e.g., in free form using a few sentences. You may want to articulate the problem in form of a question.]</p>
-"
-Forward-only db migrations,adopt,techniques,False,"<p>We believe software engineers should bring features to customers frequently and in a fast manner. That's why we have adopted CD practices in our SDLC.</p>
+<p>[Describe the context and problem statement, e.g., in free form using a few sentences. You may want to articulate the problem in form of a question.]</p>"
+Forward-only db migrations;adopt;techniques;FALSE;"<p>We believe software engineers should bring features to customers frequently and in a fast manner. That's why we have adopted CD practices in our SDLC.</p>
 
 <p>In case of software defects, the code changes can be easily rolled back without extra complexity(using revert PRs). When it comes to database, it's more complex. Ex:
 The table <code>order_cancellations</code> is created as part of introduction of new feature on the website that allows customers to cancel the order on their own.
@@ -66,29 +62,23 @@ This enables us to:
 * save the time spent on writing down migrations
 * use blue-green deployments</p>
 
-<p><a href=""https://www.martinfowler.com/articles/evodb.html"">Evolutionary Database Design by Martin Fowler</a></p>
-"
-Platform engineering product teams,trial,techniques,False,"<h2>Description</h2>
+<p><a href=""https://www.martinfowler.com/articles/evodb.html"">Evolutionary Database Design by Martin Fowler</a></p>"
+Platform engineering product teams;trial;techniques;FALSE;"<h2>Description</h2>
 
-<p>[Describe the context and problem statement, e.g., in free form using a few sentences. You may want to articulate the problem in form of a question.]</p>
-"
-Long-lived branches,hold,techniques,False,"<h2>Description</h2>
+<p>[Describe the context and problem statement, e.g., in free form using a few sentences. You may want to articulate the problem in form of a question.]</p>"
+Long-lived branches;hold;techniques;FALSE;"<h2>Description</h2>
 
-<p>[Describe the context and problem statement, e.g., in free form using a few sentences. You may want to articulate the problem in form of a question.]</p>
-"
-Sentry,adopt,tools,False,"<h2>Description</h2>
+<p>[Describe the context and problem statement, e.g., in free form using a few sentences. You may want to articulate the problem in form of a question.]</p>"
+Sentry;adopt;tools;FALSE;"<h2>Description</h2>
 
-<p>[Describe the context and problem statement, e.g., in free form using a few sentences. You may want to articulate the problem in form of a question.]</p>
-"
-Graylog,hold,tools,False,"<h2>Description</h2>
+<p>[Describe the context and problem statement, e.g., in free form using a few sentences. You may want to articulate the problem in form of a question.]</p>"
+Graylog;hold;tools;FALSE;"<h2>Description</h2>
 
-<p>[Describe the context and problem statement, e.g., in free form using a few sentences. You may want to articulate the problem in form of a question.]</p>
-"
-Kibana,trial,tools,False,"<h2>Description</h2>
+<p>[Describe the context and problem statement, e.g., in free form using a few sentences. You may want to articulate the problem in form of a question.]</p>"
+Kibana;trial;tools;FALSE;"<h2>Description</h2>
 
-<p>[Describe the context and problem statement, e.g., in free form using a few sentences. You may want to articulate the problem in form of a question.]</p>
-"
-Dependabot,assess,tools,False,"<h2>How to keep our dependencies up-to-date?</h2>
+<p>[Describe the context and problem statement, e.g., in free form using a few sentences. You may want to articulate the problem in form of a question.]</p>"
+Dependabot;assess;tools;FALSE;"<h2>How to keep our dependencies up-to-date?</h2>
 
 <p>Across all our services, we use hundreds of software dependencies (aka libraries and frameworks).
 Keeping them up to date is a mandatory step.
@@ -105,9 +95,7 @@ Lots of times, security issues get discovered and are patched with a small updat
 
 <h2>Current status of implementation</h2>
 
-<p>The tool is used in many of our Github projects. It helps us (a lot) in keeping track of these updates and saves us tons of time by opening PR, with updates, with visibile successful (or not) tests, giving us confidence to move forward faster.</p>
-"
-Vault,assess,tools,False,"<h2>Description</h2>
+<p>The tool is used in many of our Github projects. It helps us (a lot) in keeping track of these updates and saves us tons of time by opening PR, with updates, with visibile successful (or not) tests, giving us confidence to move forward faster.</p>"
+Vault;assess;tools;FALSE;"<h2>Description</h2>
 
-<p>[Describe the context and problem statement, e.g., in free form using a few sentences. You may want to articulate the problem in form of a question.]</p>
-"
+<p>[Describe the context and problem statement, e.g., in free form using a few sentences. You may want to articulate the problem in form of a question.]</p>"
