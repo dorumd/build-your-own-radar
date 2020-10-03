@@ -216,9 +216,9 @@ const SheetId = function() {
     return queryParams
   }
 
-  queryParams = loadSheetIdFromEnv()
+  queryParams = loadSheetIdFromUrl()
   if (!queryParams) {
-    queryParams = loadSheetIdFromUrl()
+    queryParams = loadSheetIdFromEnv()
   }
 
   return queryParams
