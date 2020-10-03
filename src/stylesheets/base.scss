@@ -341,6 +341,7 @@ body {
             &.expanded {
               transition: max-height 0.5s ease 0.2s;
               max-height: 1000px;
+              overflow: scroll;
             }
           }
         }
